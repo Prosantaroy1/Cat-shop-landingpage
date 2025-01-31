@@ -9,36 +9,59 @@
     <!-- tailwind CDN add -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/067bbb7b00.js" crossorigin="anonymous"></script>
+    <!-- style css -->
+    <style>
+        #banner-img {
+            background-image: url(./c1-assets/cat-big.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 700px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- header section open -->
     <header>
         <!-- navber section -->
-        <nav class="flex items-center justify-between max-w-[1340px] mx-auto">
-            <!-- nav-logo -->
-            <div class="flex items-center gap-x-2">
-               <img src='./c1-assets/logo-header.png' alt="company-logo"/>
-               <h4 class="text-2xl font-bold">Browse4Pets</h4>
-            </div>
-            <!--nav menu -->
-            <ul class="flex items-center gap-x-4">
-                <li>Find a pet</li>
-                <li>Breeds</li>
-                <li>Contact us</li>
-            </ul>
-            <!-- nav-right-part  -->
-            <div class="flex items-center gap-x-3">
-                <i class="fa-regular fa-bell"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button>Login</button>
-                <button>Register</button>
-            </div>
-        </nav>
+        <div class="bg-[#FFF9F4] border-b-2 md:border-0 border-black py-4">
+            <nav class="flex items-center justify-between max-w-[1340px] mx-auto">
+                <!-- nav-logo -->
+                <div class="flex items-center gap-x-2">
+                    <img src='./c1-assets/logo-header.png' alt="company-logo" />
+                    <h4 class="text-2xl font-bold">Browse4Pets</h4>
+                </div>
+                <!--nav menu -->
+                <ul class="hidden lg:flex items-center text-xl gap-x-10">
+                    <li>Find a pet</li>
+                    <li>Breeds</li>
+                    <li>Contact us</li>
+                </ul>
+                <!-- nav-right-part  -->
+                <div class="hidden lg:flex items-center text-xl gap-x-3">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="border-2 border-[#FFDC26] px-6 py-2 rounded-md">Login</button>
+                    <button class="bg-[#FFDC26] px-6 py-2 rounded-md">Register</button>
+                </div>
+                <!-- mobile menu -->
+            </nav>
+        </div>
         <!-- banner section -->
-        <banner>
-
-        </banner>
+        <section class="max-w-[1340px] mx-auto">
+            <div id="banner-img" class="py-28">
+                <h3 class="text-5xl font-bold">
+                    Pamper Your Pet,<br/> Because They Deserve<br/> the Bes
+                </h3>
+                <p class="py-5 text-xl font-medium">
+                    Discover a world of treats, toys, and essentials handpicked for<br/> your furry friends. Shop now and
+                    make tails wag with joy!
+                </p>
+                <button class="bg-[#FFDC26] px-6 py-2 rounded-md">Find a pet</button>
+            </div>
+        </section>
     </header>
     <!-- main section open -->
     <main>
