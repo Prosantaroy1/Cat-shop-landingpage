@@ -17,21 +17,21 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 700px;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
     <!-- header section open -->
-    <header>
+    <header class="px-4 lg:px-0">
         <!-- navber section -->
         <div class="bg-[#FFF9F4] border-b-2 md:border-0 border-black py-4">
             <nav class="flex items-center justify-between max-w-[1340px] mx-auto">
                 <!-- nav-logo -->
                 <div class="flex items-center gap-x-2">
                     <img src='./c1-assets/logo-header.png' alt="company-logo" />
-                    <h4 class="text-2xl font-bold">Browse4Pets</h4>
+                    <h4 class="text-2xl hidden lg:flex font-bold">Browse4Pets</h4>
                 </div>
                 <!--nav menu -->
                 <ul class="hidden lg:flex items-center text-xl gap-x-10">
@@ -40,32 +40,97 @@
                     <li>Contact us</li>
                 </ul>
                 <!-- nav-right-part  -->
-                <div class="hidden lg:flex items-center text-xl gap-x-3">
+                <div class="hidden lg:flex items-center text-xl gap-x-6">
                     <i class="fa-regular fa-bell"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <button class="border-2 border-[#FFDC26] px-6 py-2 rounded-md">Login</button>
                     <button class="bg-[#FFDC26] px-6 py-2 rounded-md">Register</button>
                 </div>
                 <!-- mobile menu -->
+                <div class="flex lg:hidden">
+                    <i class="fa-solid fa-bars text-4xl"></i>
+                </div>
             </nav>
         </div>
         <!-- banner section -->
         <section class="max-w-[1340px] mx-auto">
-            <div id="banner-img" class="py-28">
+            <div id="banner-img" class="py-62">
                 <h3 class="text-5xl font-bold">
-                    Pamper Your Pet,<br/> Because They Deserve<br/> the Bes
+                    Pamper Your Pet,<br /> Because They Deserve<br /> the Bes
                 </h3>
                 <p class="py-5 text-xl font-medium">
-                    Discover a world of treats, toys, and essentials handpicked for<br/> your furry friends. Shop now and
+                    Discover a world of treats, toys, and essentials handpicked for<br /> your furry friends. Shop now
+                    and
                     make tails wag with joy!
                 </p>
-                <button class="bg-[#FFDC26] px-6 py-2 rounded-md">Find a pet</button>
+                <button class="bg-[#FFDC26] px-6 py-2 text-lg rounded-md">Find a pet</button>
             </div>
         </section>
     </header>
     <!-- main section open -->
     <main>
+        <!-- brower category section -->
+        <div class="max-w-[1340px] pt-20 mx-auto">
+            <h3 class="text-4xl font-bold ">Browse By Categories</h3>
+            <!-- category box -->
+            <div class="grid grid-cols-2 pt-16 gap-6 lg:grid-cols-6">
+                <div class="bg-[#F9DF8A] rounded-md flex items-center justify-center flex-col px-7 space-y-3 py-5">
+                    <img src="./c1-assets/dog-cartoon.png" class="bg-white p-4 rounded-full" alt="category photo">
+                    <h3 class='text-2xl font-bold'>Dog</h3>
+                    <p class="text-xl font-normal">4 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-md flex items-center justify-center flex-col px-7 space-y-3 py-5">
+                    <img src="./c1-assets/dog-cartoon.png" class="bg-white p-4 rounded-full" alt="category photo">
+                    <h3 class='text-2xl font-bold'>Dog</h3>
+                    <p class="text-xl font-normal">4 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-md flex items-center justify-center flex-col px-7 space-y-3 py-5">
+                    <img src="./c1-assets/dog-cartoon.png" class="bg-white p-4 rounded-full" alt="category photo">
+                    <h3 class='text-2xl font-bold'>Dog</h3>
+                    <p class="text-xl font-normal">4 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-md flex items-center justify-center flex-col px-7 space-y-3 py-5">
+                    <img src="./c1-assets/dog-cartoon.png" class="bg-white p-4 rounded-full" alt="category photo">
+                    <h3 class='text-2xl font-bold'>Dog</h3>
+                    <p class="text-xl font-normal">4 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-md flex items-center justify-center flex-col px-7 space-y-3 py-5">
+                    <img src="./c1-assets/dog-cartoon.png" class="bg-white p-4 rounded-full" alt="category photo">
+                    <h3 class='text-2xl font-bold'>Dog</h3>
+                    <p class="text-xl font-normal">4 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] rounded-md flex items-center justify-center flex-col px-7 space-y-3 py-5">
+                    <img src="./c1-assets/dog-cartoon.png" class="bg-white p-4 rounded-full" alt="category photo">
+                    <h3 class='text-2xl font-bold'>Dog</h3>
+                    <p class="text-xl font-normal">4 items</p>
+                </div>
 
+            </div>
+        </div>
+        <!-- treading product list -->
+        <section class="mt-20 bg-red-100 py-30">
+            <div class="max-w-[1340px] mx-auto">
+                <h3 class="text-4xl font-bold ">Trending Pet Products</h3>
+                <!-- product box -->
+                <div class="grid grid-cols-1 mt-16 lg:grid-cols-6 gap-8">
+                    <!-- left product -->
+                    <div class="bg-[#F9DF8A] relative  rounded-md pb-60 space-y-4 p-8 lg:col-span-2">
+                        <h3 class="text-2xl font-bold">Lorem ipsum dolor sit amet.</h3>
+                        <p class="text-xl font-normal">
+                            Lorem ipsum dolor sit amet, consectetur<br/> adipisicing elit. Odio non sunt porro.
+                        </p>
+                        <button class="bg-white text-black px-6 py-2 rounded-md">Shop Now</button>
+                        <div class="absolute right-2 bottom-3">
+                            <img src="./c1-assets/cute-pet-mid.png" class="w-[300px] h-[268px]" alt="pet photo">
+                        </div>
+                    </div>
+                    <!-- right product -->
+                    <div class="lg:col-span-4 bg-red-500 h-28">
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- footer section open -->
     <footer>
